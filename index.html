@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NMIA</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            font-size: 18px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            font-size: 18px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+</style>
+
+<style>/* Default table styling */
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th{
+        text-align: center;
+        vertical-align: middle;
+        padding: 8px;
+        border: 0px solid #ddd;
+    }
+
+    td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    
+    /* Convert to card layout on small screens */
+    @media (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+    
+        thead {
+            display: none; /* Hide headers */
+        }
+    
+        tr {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    
+        td {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px;
+        }
+    
+        td::before {
+            content: attr(data-label); /* Add labels from HTML */
+            font-weight: bold;
+            flex: 1;
+            text-align: left;
+        }
+    }
+
+    tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+        .title {
+            font-size: 42px;
+            font-weight: bold;
+            color: #000; /* Slightly softer black */
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle-container {
+            max-width: 90vw; /* Keeps text within screen */
+            margin: 0 auto; /* Centers the container */
+            text-align: left; /* Aligns text to the left */
+        }
+        
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            line-height: 2.0;
+            margin-bottom: 30px;
+            color: #000;
+            text-align: left;
+            max-width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+            white-space: pre-wrap;
+        }
+        .big-button {
+            width: 300px; /* Wider */
+            height: 70px; /* Taller */
+            font-size: 24px; /* Bigger text */
+            font-weight: bold;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px; /* More rounded */
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 25px;
+            padding: 15px;
+            display: block;   /* Ensures it's treated as a block element */
+            margin: 25px auto;
+        }
+        .big-button:hover {
+            background-color: #0056b3;
+        }
+    }
+</style>
+
+
+<body>
+
+    <p class="title">NMIA - Never Miss It Again!</p>
+    <p class="subtitle"><pre class="subtitle">
+Tired of missing out on events, reg. deadlines, etc by your favourite clubs just cuz you didn't get the memo?
+
+Exhausted from keeping track by checking instagram stories, posts of multiple club ig pages? 
+        
+Well, not anymore, NMIA’s got you covered.
+
+• Pick the clubs you’re interested in, and get notifications straight to your email inbox.
+• Reminders from time to time regarding the deadline, event dates.
+• Check out all upcoming events in a simple, regularly updated table.
+• Happening Now – See ongoing events in real time, and opt in to get a heads-up an hour before they start.
+       
+It’s completely free. Just hit the button below to sign up!</p> <button class="big-button "onclick="window.location.href='https://forms.gle/mf1dbMMjwromp5fM8';">Click</button></p>
+    </pre>
+
+    <table>
+        <thead>
+            <tr>
+                <th><pre>     Event Name</pre></th>
+                <th><pre>               Organizer</pre></th>
+                <th><pre>        Date</pre></th>
+                <th><pre>  Time</pre></th>
+                <th><pre>    Deadline</pre></th>
+                <th><pre>Reg.Link</pre></th>
+            </tr>
+        </thead>
+        <tbody>
+            <table>
+        <tr>
+        <td>Break the Chain</td>
+        <td>CryptoNITT</td>
+        <td>22-02-25</td>
+        <td>2pm - 5pm</td>
+        <td>22-02-25</td>
+        <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSeUYhMviHFQeElOLo8IHUvLmsCbJ9ujhwRw_TkTe-p6NItsIw/viewform">Register</a></td>
+    </tr>
+    <tr>
+        <td>Hardware Heist</td>
+        <td>Nuts and Volts</td>
+        <td>22-02-25</td>
+        <td>2pm - 5pm</td>
+        <td>22-02-25</td>
+        <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqUuqp2AnPaqoPfWnwPc4dgHUsCmDy3vMFmoay7v_rLeTVEA/viewform">Register</a></td>
+    </tr>
+    <tr>
+        <td>Latent Query</td>
+        <td>Technical Council, Pragyan</td>
+        <td>23-02-25</td>
+        <td>10am</td>
+        <td>23-02-25</td>
+        <td><a href="https://unstop.com/competitions/latent-query-pragyan25-national-institute-of-technology-nit-tiruchirappalli-1407043?lb=MFD36Tas&utm_medium=Share&utm_source=shortUrl">Register</a></td>
+    </tr>
+    <tr>
+        <td>GL Srinivas Mohan</td>
+        <td>Pragyan</td>
+        <td>23-02-25</td>
+        <td>10:30 - 12:30</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Friendly Feud</td>
+        <td>Pragyan</td>
+        <td>23-02-25</td>
+        <td>14:00 - 18:00</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Puzzle Champ (Finals)</td>
+        <td>Pragyan</td>
+        <td>23-02-25</td>
+        <td>14:00 - 17:00</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Aviatium (ROUND 1)</td>
+        <td>Pragyan</td>
+        <td>23-02-25</td>
+        <td>14:00 - 16:00</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Crossfire</td>
+        <td>Pragyan</td>
+        <td>23-02-25</td>
+        <td>15:30 - 18:00</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Aviatium (ROUND 2)</td>
+        <td>Pragyan</td>
+        <td>23-02-25</td>
+        <td>16:00 - 18:00</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Mysore Xpress</td>
+        <td>Pragyan</td>
+        <td>23-02-25</td>
+        <td>19:30 - 21:00</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Antara Mitra</td>
+        <td>Pragyan</td>
+        <td>23-02-25</td>
+        <td>21:30 - 00:00</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+                </tbody>
+            </table>
+                </table>
+
+
+
+
+<pre>
+
+
+    
+</pre>
+<h2>Happening Now</h2>
+    <h3>Current Fest : Pragyan'25</h3>
+    <table>
+        <tr>
+            <th>Event Time</th>
+            <th>Event Name</th>
+            <th>Organizer</th>
+            <th>Venue</th>
+        </tr>
+
+        <td>09:00 - 17:00</td>
+        <td>Sangam and Ingenium (Final Round)</td>
+        <td>Pragyan</td>
+        <td>GJCH</td>
+    </tr>
+    <tr>
+        <td>09:30 - 17:00</td>
+        <td>Special Exhibits</td>
+        <td>Pragyan</td>
+        <td>GJCH</td>
+    </tr>
+    <tr>
+        <td>07:30 - 19:00</td>
+        <td>Pragyan Cube Open</td>
+        <td>Pragyan</td>
+        <td>LOGOS</td>
+    </tr>
+    <tr>
+        <td>07:30 - 19:00</td>
+        <td>Old Town Road (Round 1)</td>
+        <td>Pragyan</td>
+        <td>CEESAT</td>
+    </tr>
+    <tr>
+        <td>07:30 - 19:00</td>
+        <td>Mystica (Round 2)</td>
+        <td>Pragyan</td>
+        <td>ORION</td>
+    </tr>
+    <tr>
+        <td>08:00 - 13:00</td>
+        <td>Submerge (Onsite Round 1)</td>
+        <td>Pragyan</td>
+        <td>SWIMMING POOL</td>
+    </tr>
+    <tr>
+        <td>08:00 - 13:00</td>
+        <td>Roboblend (Onsite Round 1)</td>
+        <td>Pragyan</td>
+        <td>GJCH</td>
+    </tr>
+    <tr>
+        <td>09:00 - 13:00</td>
+        <td>Marketing Hub (Onsite Round 1)</td>
+        <td>Pragyan</td>
+        <td>DOMS</td>
+    </tr>
+    <tr>
+        <td>09:30 - 11:30</td>
+        <td>Clique and Clues (Round 2)</td>
+        <td>Pragyan</td>
+        <td>ORION</td>
+    </tr>
+    <tr>
+        <td>09:30 - 14:00</td>
+        <td>Ultimate Manager (Onsite Round 1)</td>
+        <td>Pragyan</td>
+        <td>DOMS</td>
+    </tr>
+    <tr>
+        <td>09:00 - 14:00</td>
+        <td>Circuitrix (Round 2)</td>
+        <td>Pragyan</td>
+        <td>ECE LAB</td>
+    </tr>
+    <tr>
+        <td>09:30 - 17:00</td>
+        <td>MongoDB</td>
+        <td>Pragyan</td>
+        <td>LOGOS</td>
+    </tr>
+    <tr>
+        <td>09:30 - 17:00</td>
+        <td>Autodesk</td>
+        <td>Pragyan</td>
+        <td>THIRD-I</td>
+    </tr>
+    <tr>
+        <td>09:30 - 17:00</td>
+        <td>Siemens</td>
+        <td>Pragyan</td>
+        <td>LOGOS</td>
+    </tr>
+    <tr>
+        <td>09:30 - 17:00</td>
+        <td>Juniper Networks</td>
+        <td>Pragyan</td>
+        <td>LOGOS</td>
+    </tr>
+    <tr>
+        <td>09:30 - 12:30</td>
+        <td>Linux Foundation</td>
+        <td>Pragyan</td>
+        <td>LOGOS</td>
+    </tr>
+    <tr>
+        <td>09:30 - 17:30</td>
+        <td>Remarkskill</td>
+        <td>Pragyan</td>
+        <td>ORION</td>
+    </tr>
+    </table>
+
+
+</body>
+</html>
