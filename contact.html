@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NMIA</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            font-size: 18px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            font-size: 18px;
+            background-color: #f2f2f2;
+        }
+        /* Default table styling */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th{
+            text-align: center;
+            vertical-align: middle;
+            padding: 8px;
+            border: 0px solid #ddd;
+        }
+    
+        td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+    
+        
+        /* Convert to card layout on small screens */
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+        
+            thead {
+                display: none; /* Hide headers */
+            }
+        
+            tr {
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                background: #f9f9f9;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        
+            td {
+                display: flex;
+                justify-content: space-between;
+                padding: 6px;
+            }
+        
+            td::before {
+                content: attr(data-label); /* Add labels from HTML */
+                font-weight: bold;
+                flex: 1;
+                text-align: left;
+            }
+        }
+    
+        tbody tr:nth-child(odd) {
+        background-color: #f1f1f1;
+    }
+    
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    
+            .title {
+                font-size: 42px;
+                font-weight: bold;
+                color: #000; /* Slightly softer black */
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+    
+            .subtitle-container {
+                max-width: 90vw; /* Keeps text within screen */
+                margin: 0 auto; /* Centers the container */
+                text-align: left; /* Aligns text to the left */
+            }
+            
+            .subtitle {
+                font-family: 'Inter', sans-serif;
+                font-size: 24px;
+                line-height: 2.0;
+                margin-bottom: 30px;
+                color: #000;
+                text-align: left;
+                max-width: 90vw;
+                margin-left: auto;
+                margin-right: auto;
+                white-space: pre-wrap;
+            }
+            .big-button {
+                width: 250px; /* Wider */
+                height: 60px; /* Taller */
+                font-size: 24px; /* Bigger text */
+                font-weight: bold;
+                background-color: #000000;
+                color: white;
+                border: none;
+                border-radius: 10px; /* More rounded */
+                cursor: pointer;
+                transition: 0.3s;
+                margin-top: 25px;
+                padding: 15px;
+                display: block;   /* Ensures it's treated as a block element */
+                margin: 25px auto;
+            }
+            .big-button:hover {
+                background-color: #5c646c;
+            }
+        
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .nav-links {
+            display: flex;
+        }
+</style>
+ </head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">NMIA</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    
+    <pre class="subtitle">
+<h4>Gagan S Kintada
+kintadagagansai@gmail.com
+7780314446</h4> 
+    </pre>       
+</body>
+</html>
+    
