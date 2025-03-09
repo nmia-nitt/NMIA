@@ -2,149 +2,57 @@
 <html>
 <head>
     <title>NMIA</title>
-    
     <style>
         body {
             font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
         }
-        table {
-            font-size: 18px;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            font-size: 18px;
-            background-color: #f2f2f2;
-        }
-        /* Default table styling */
         .table-container {
             width: 100%;
             overflow-x: auto;
         }
-        
         table {
             width: 100%;
             border-collapse: collapse;
+            font-size: 18px;
         }
-        
-        th{
-            text-align: center;
-            vertical-align: middle;
-            padding: 8px;
-            border: 0px solid #ddd;
-        }
-    
-        td {
-            padding: 8px;
-            text-align: left;
+        th, td {
             border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
         }
-    
-        
-        /* Convert to card layout on small screens */
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
         @media (max-width: 600px) {
             table, thead, tbody, th, td, tr {
                 display: block;
             }
-        
             thead {
-                display: none; /* Hide headers */
+                display: none;
             }
-        
             tr {
-                margin-bottom: 10px;
                 border: 1px solid #ddd;
-                background: #f9f9f9;
+                background: #fff;
+                margin-bottom: 10px;
                 padding: 10px;
                 border-radius: 5px;
             }
-        
             td {
                 display: flex;
                 justify-content: space-between;
                 padding: 6px;
+                text-align: left;
             }
-        
             td::before {
-                content: attr(data-label); /* Add labels from HTML */
+                content: attr(data-label);
                 font-weight: bold;
-                flex: 1;
-                text-align: left;
             }
-        }
-    
-        tbody tr:nth-child(odd) {
-        background-color: #f1f1f1;
-    }
-    
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-    
-            .title {
-                font-size: 42px;
-                font-weight: bold;
-                color: #000; /* Slightly softer black */
-                margin-bottom: 20px;
-                letter-spacing: 1px;
-            }
-    
-            .subtitle-container {
-                max-width: 90vw; /* Keeps text within screen */
-                margin: 0 auto; /* Centers the container */
-                text-align: left; /* Aligns text to the left */
-            }
-            
-            .subtitle {
-                font-family: 'Inter', sans-serif;
-                font-size: 24px;
-                line-height: 2.0;
-                margin-bottom: 30px;
-                color: #000;
-                text-align: left;
-                max-width: 90vw;
-                margin-left: auto;
-                margin-right: auto;
-                white-space: pre-wrap;
-            }
-            .big-button {
-                width: 250px; /* Wider */
-                height: 60px; /* Taller */
-                font-size: 24px; /* Bigger text */
-                font-weight: bold;
-                background-color: #000000;
-                color: white;
-                border: none;
-                border-radius: 10px; /* More rounded */
-                cursor: pointer;
-                transition: 0.3s;
-                margin-top: 25px;
-                padding: 15px;
-                display: block;   /* Ensures it's treated as a block element */
-                margin: 25px auto;
-            }
-            .big-button:hover {
-                background-color: #5c646c;
-            }
-            .about {
-                    font-family: 'Inter', sans-serif;
-                    font-size: 12px;
-                    line-height: 2.0;
-                    margin-bottom: 30px;
-                    color: #000;
-                    text-align: left;
-                    max-width: 90vw;
-                    margin-left: auto;
-                    margin-right: auto;
-                    white-space: pre-wrap;
-                }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
         }
         .navbar {
             background-color: #333;
@@ -157,132 +65,131 @@
             color: white;
             text-decoration: none;
             padding: 14px 20px;
-            display: block;
         }
         .navbar a:hover {
             background-color: #575757;
         }
-        .nav-links {
-            display: flex;
+        .title {
+            font-size: 42px;
+            font-weight: bold;
+            color: #000;
+            text-align: center;
+            margin-bottom: 20px;
         }
-</style>
+        .subtitle {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .big-button {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .big-button:hover {
+            background-color: #5c646c;
+        }
+    </style>
 </head>
-
-</body>
-
-<div class="navbar">
-    <a href="#" class="logo">NMIA</a>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">NMIA</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
-</div>
-
-
     <p class="title">NMIA - Never Miss It Again!</p>
-<p class="subtitle">Sign Up to choose the interested clubs and get notifications, remainders when an event, registration, etc is announced.</p><button class="big-button "onclick="window.location.href='https://forms.gle/mf1dbMMjwromp5fM8';">Sign Up</button>
-
-
-
-    <h2>Upcoming</h2>
-    <table>
-    <thead>
-        <tr>
-            <th><pre>     Event Name</pre></th>
-            <th><pre>      Organizer</pre></th>
-            <th><pre>  Date</pre></th>
-            <th><pre>  Time</pre></th>
-            <th><pre>    Deadline</pre></th>
-            <th><pre>Reg.Link</pre></th>
-        </tr>
-    </thead>
-    <tbody>
+    <p class="subtitle">Sign Up to choose the interested clubs and get notifications, reminders when an event, registration, etc. is announced.</p>
+    <button class="big-button" onclick="window.location.href='https://forms.gle/mf1dbMMjwromp5fM8';">Sign Up</button>
+    <h2>Upcoming Events</h2>
+    <div class="table-container">
         <table>
-    
-<!--             <h3>nothing for the time being</h3> -->
-
-
-<tr>           
-<td>Intrumentals Solo</td>
-<td>Aaveg</td>
-<td>11/03</td>
-<td>5:30</td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>           
-<td>Battle of Bands</td>
-<td>Aaveg</td>
-<td>11/03</td>
-<td>7:15</td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>           
-    <td>Singing(Eastern)</td>
-    <td>Aaveg</td>
-    <td>12/03</td>
-    <td>5:30</td>
-    <td> </td>
-    <td> </td>
-</tr>
-
-<tr>           
-        <td>Choreonite</td>
-        <td>Aaveg</td>
-        <td>12/03</td>
-        <td>7:00</td>
-        <td> </td>
-        <td> </td>
-</tr>
-        
-
-
-
-</tbody>
-</table>
-</table>
-
-
-
-
-<pre>
-
-
-
-</pre>
-<h2>Happening Now</h2>
-<!--     <h3>Current Fest : Pragyan'25</h3> -->
-<table>
-<tr>
-<th>Event Name</th>
-<th>Organizer</th>
-<th>Event Time</th>
-<th>Link</th>
-<th>Venue</th>
-</tr>
-
-<tr>           
-<td>Fashion Show</td>
-<td>Aaveg</td>
-<td>5:30pm</td>
-<td> </td>
-<td>Barn Hall</td>
-</tr>
-
-<tr>           
-<td>Singing(Western)</td>
-<td>Aaveg</td>
-<td>7:00pm</td>
-<td> </td>
-<td>Barn Hall</td>
-</tr>
-
-
-</table>
-
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Organizer</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Deadline</th>
+                    <th>Reg. Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Event Name">Instrumentals Solo</td>
+                    <td data-label="Organizer">Aaveg</td>
+                    <td data-label="Date">11/03</td>
+                    <td data-label="Time">5:30</td>
+                    <td data-label="Deadline">-</td>
+                    <td data-label="Reg. Link">-</td>
+                </tr>
+                <tr>
+                    <td data-label="Event Name">Battle of Bands</td>
+                    <td data-label="Organizer">Aaveg</td>
+                    <td data-label="Date">11/03</td>
+                    <td data-label="Time">7:15</td>
+                    <td data-label="Deadline">-</td>
+                    <td data-label="Reg. Link">-</td>
+                </tr>
+                <tr>
+                    <td data-label="Event Name">Singing (Eastern)</td>
+                    <td data-label="Organizer">Aaveg</td>
+                    <td data-label="Date">12/03</td>
+                    <td data-label="Time">5:30</td>
+                    <td data-label="Deadline">-</td>
+                    <td data-label="Reg. Link">-</td>
+                </tr>
+                <tr>
+                    <td data-label="Event Name">Choreonite</td>
+                    <td data-label="Organizer">Aaveg</td>
+                    <td data-label="Date">12/03</td>
+                    <td data-label="Time">7:00</td>
+                    <td data-label="Deadline">-</td>
+                    <td data-label="Reg. Link">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Happening Now</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Organizer</th>
+                    <th>Event Time</th>
+                    <th>Link</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Event Name">Fashion Show</td>
+                    <td data-label="Organizer">Aaveg</td>
+                    <td data-label="Event Time">5:30 PM</td>
+                    <td data-label="Link">-</td>
+                    <td data-label="Venue">Barn Hall</td>
+                </tr>
+                <tr>
+                    <td data-label="Event Name">Singing (Western)</td>
+                    <td data-label="Organizer">Aaveg</td>
+                    <td data-label="Event Time">7:00 PM</td>
+                    <td data-label="Link">-</td>
+                    <td data-label="Venue">Barn Hall</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
